@@ -1,6 +1,7 @@
 **/*.json
 data
 Pipfile.lock
+**/archive
 
 # general bloat
 .vscode

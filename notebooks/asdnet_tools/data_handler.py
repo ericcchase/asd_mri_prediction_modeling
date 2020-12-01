@@ -88,8 +88,7 @@ class DataHandler:
                 blob.upload_from_filename(f'/content/{m.name}_init_weights.h5')
             else:
                 # save trained model #
-                m.save(f'/content/{m.name}_trained', overwrite=True)
-                # blob = bucket.blob(f'/content/{m.name}_trained')
+                m.save(f'gs://{bucket_name}/results/{m.name}_trained', overwrite=True)
                 # save weights #
                 m.save_weights(f'/content/{m.name}_trained_weights.h5', overwrite=True, save_format='h5')
                 blob = bucket.blob(f'results/{m.name}_trained_weights.h5')
