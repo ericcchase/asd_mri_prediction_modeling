@@ -1,0 +1,9 @@
+tf-nightly
+numpy
+matplotlib
+seaborn
+dipy
+nilearn
+scipy
+streamlit 
+datetime
